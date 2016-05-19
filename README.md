@@ -1,6 +1,3 @@
-## AndroidAutomatedDistribution
-
-## Synopsis
 
 #My goal is to make automated process of generating APK file and published it to Play store. 
 
