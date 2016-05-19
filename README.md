@@ -2,11 +2,38 @@
 
 ## Synopsis
 
-At the top of the file there should be a short introduction and/ or overview that explains **what** the project is. This description should match descriptions added for package managers (Gemspec, package.json, etc.)
+#My goal is to make automated process of generating APK file and published it to Play store. 
+
+Now a days it is time consuming thing to generate apk file by updating version name and version code everytime and published APK file to play store. Even it is always hard to remember version code and version name for each code that use for distribution.
+
+As per best practice, version name and version code should be based on the code, that we have commited on any repository (e.g. gitHub). So, to make this process automated, I have planed to make it on every commit of code.
+
+You can upload your app to Google Play Store with following 4 steps only.
+
+1. Update code as per your requirement/update/bug-fixing (If required)
+2. Commit code to your gitHub repository
+3. Apply tag to your commit
+
+
+# Requirements
+
+You must need following environment to make this process automated
+
+1. Project to publish
+2. Github account
+3. CI (Continues Integration) framework
+4. Google Play Store account
+
 
 ## Code Example
 
-Show what the library does as concisely as possible, developers should be able to figure out **how** your project solves their problem by looking at the code example. Make sure the API you are showing off is obvious, and that your code is short and concise.
+Following are the changes you need to do in your existing project.
+
+You need to update gradle in such way that it takes highest apply tag as version code and version name. I believe that is only required for release version of the app. So it is required to update for release version of the flavour only.
+
+
+
+
 
 ## Motivation
 
